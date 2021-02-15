@@ -1,2 +1,2 @@
 # dev-pholio
-Custom developer porfolio
+Custom developer portfolio
