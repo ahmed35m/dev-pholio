@@ -85,8 +85,7 @@ li{
 .card-desc{
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    /* align-self: start; */
-
+    margin: 0.5em;
 }
 .card-image{
     grid-column: 1 / span 1;
@@ -122,14 +121,16 @@ li{
     justify-content: space-evenly;
 
     border: black 1px solid ;
-    margin: 1em
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
 }
 
 .featured{
     display: grid;
     grid-template-columns: 70% auto;
-    grid-template-rows: 35% 1fr ;
+    grid-template-rows: 35% 1fr 1fr ;
     border: black 1px solid ;
 }
 
@@ -148,10 +149,11 @@ li{
     border: black 1px solid ;
     margin: 1em;
     z-index: 10;
+    min-height: 100px;
+
 
 }
 .skill-cat{
-
 }
 .skill-pill{
     background-color: blanchedalmond;
@@ -159,4 +161,8 @@ li{
     padding: 0.4em;
     margin: 0.2em;
 }
-
+.exp{
+    grid-column: 1 / span 1;
+    grid-row: 3/ span 1;
+    min-height: 250px;
+}
