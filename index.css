@@ -165,4 +165,30 @@ li{
     grid-column: 1 / span 1;
     grid-row: 3/ span 1;
     min-height: 250px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 20% 1fr ;
+}
+.exp-intro{
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 1;
+}
+.exp-desc{
+    grid-column: 2 / span 1;
+    grid-row: 2/ span 1;
+}
+.exp-list{
+    grid-column: 1 / span 1;
+    grid-row: 2/ span 1;
+}
+.exp-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
 }
