@@ -5,33 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Muhammad M Ahmed</title>
   </head>
 
   <body>
     <header class="header-bar">
       <div class="logo-bar">
-        <div class="logo-title">Muhammad Manzoor Ahmed</div>
+        <div class="logo-title">M A</div>
       </div>
       <div class="social-bar">
-        <ul class="social-list">
-          <li><a href="https://github.com/ahmed35m">Github</a></li>
-          <li><a href="https://twitter.com">Twitter</a></li>
-          <li><a href="mailto:muhammadmanzoor16@gmail.com">Email</a></li>
+        <ul class="social-list horz-list">
+          <li>
+            <a href="https://github.com/ahmed35m"
+              ><img
+                src="./images/icons/GitHub-Mark-120px-plus.png"
+                alt="github account"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com"
+              ><span class="material-icons"></span
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:muhammadmanzoor16@gmail.com"
+              ><span class="material-icons">mail</span></a
+            >
+          </li>
         </ul>
       </div>
     </header>
     <div class="hero">
+      <!-- <div class="post-head">Hi I am  </div> -->
       <h1 class="hero-heading">Muhammad Ahmed</h1>
-      <h4 class="hero-subheading">Introduction messsage here</h4>
+      <h5 class="hero-subheading">Software Developer</h5>
     </div>
     <section class="content-container">
       <div class="content-heading">RECENT PROJECTS</div>
 
       <div class="content-body" data-label="Projects">
         <div class="card-list">
-          <div class="card">
-            <div class="card-image"></div>
+          <div class="card c1">
+            <div class="card-image">
+              <span
+                class="material-icons material-icons-outlined"
+                style="font-size: 96px"
+              >
+                badge
+              </span>
+            </div>
             <div class="card-title">Portfolio</div>
             <div class="card-desc">
               Personal Portfolio website mades using abc
@@ -39,7 +71,7 @@
           </div>
 
           <!-- Skills -->
-          <div class="card">
+          <div class="card c2">
             <div class="card-image"></div>
             <div class="card-title">Portfolio</div>
             <div class="card-desc">
@@ -48,7 +80,7 @@
           </div>
 
           <!-- Education -->
-          <div class="card">
+          <div class="card c3">
             <div class="card-image"></div>
             <div class="card-title">Portfolio</div>
             <div class="card-desc">
@@ -56,7 +88,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card c4">
             <div class="card-image"></div>
             <div class="card-title">Portfolio</div>
             <div class="card-desc">
@@ -64,7 +96,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card c5">
             <div class="card-image"></div>
             <div class="card-title">Portfolio</div>
             <div class="card-desc">
@@ -79,59 +111,65 @@
       </div>
     </section>
 
-
     <section class="content-container">
       <div class="content-heading">ABOUT ME</div>
       <div class="content-body" data-label="About">
         <div class="featured">
           <div class="feature-textbox" data-label="intro">
-            <span> Welcome to my portfolio! I am software engineer, graduated from U of R</span>
+            <span>
+              Welcome to my portfolio! I am software engineer, graduated from U
+              of R</span
+            >
           </div>
           <div class="feature-skillbox">
-            <div data-label="skills"><span>
-              Here are some of the technologies I have worked with:
-            </span>
+            <div data-label="skills">
+              <span>
+                Here are some of the technologies I have worked with:
+              </span>
             </div>
             <div class="skill-list">
-              <div class="skill-cat social-list">
-                <ul>
+              <div class="skill-cat">
+                <ul class="horz-list">
                   <li>All</li>
                   <li>Programming Languages</li>
                   <li>Frameworks</li>
                   <li>Tooling</li>
                 </ul>
               </div>
-              <span class="skill-pill">Javascript</span>
+              <div class="pills">
+                <span class="skill-pill">Javascript</span>
+              </div>
             </div>
-
+          </div>
         </div>
 
         <div class="exp">
           <div class="exp-intro">
-            <span>I have had the oppurtunity to work at the following companies:</span>
+            <span
+              >I have had the oppurtunity to work at the following
+              companies:</span
+            >
           </div>
           <div class="exp-list">
-            <div class="companies">
+            <ul class="company-list">
+              <li><div>FCI Accelerated Solutions Inc.</div></li>
+              <li><div>Government of Saskatchewan</div></li>
+            </ul>
+          </div>
+
+          <div class="exp-desc">
+            <div class="exp-title">
+              <span class="job-pos">Job Title</span>
+              <span class="job-dur">Duration</span>
+            </div>
+            <div class="exp-duties">
               <ul>
-                <li><div>FCI Accelerated Solutions Inc.</div></li>
-                <li><div>Government of Saskatchewan</div></li>
+                <li>did something</li>
               </ul>
             </div>
           </div>
-
-            <div class="exp-desc">
-              <div class="exp-title">
-                <span>Job Title</span>
-                <span>Duration</span>
-              </div>
-              <div class="exp-duties">
-                <ul>
-                  <li>did something</li>
-                </ul>
-              </div>
-            </div>
         </div>
-
+      </div>
     </section>
 
     <section class="footer">
