@@ -18,9 +18,10 @@
   </head>
 
   <body>
-    <header class="header-bar">
-      <div class="logo-bar">
-        <div class="logo-title">M A</div>
+    <header class="header-bar header-pinned" >
+      <div class="bar">
+      <div class="logo-bar"><a href="" class="no-link">
+        <div class="logo-title">MA</div> </a>
       </div>
       <div class="social-bar">
         <ul class="social-list horz-list">
@@ -44,6 +45,7 @@
           </li>
         </ul>
       </div>
+    </div>
     </header>
     <div class="hero">
       <!-- <div class="post-head">Hi I am  </div> -->
@@ -130,14 +132,20 @@
             <div class="skill-list">
               <div class="skill-cat">
                 <ul class="horz-list">
-                  <li>All</li>
-                  <li>Programming Languages</li>
-                  <li>Frameworks</li>
-                  <li>Tooling</li>
+                  <li class="skill-cat-item"><button class="skill-cat-btn" onclick="">All</button></li>
+                  <li class="skill-cat-item"><a class="skill-cat-btn" href="">Programming Languages</a></li>
+                  <li class="skill-cat-item"><a class="skill-cat-btn" href="">Frameworks </a></li>
+                  <li class="skill-cat-item"><a class="skill-cat-btn" href="">Tooling </a></li>
                 </ul>
               </div>
               <div class="pills">
                 <span class="skill-pill">Javascript</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill"> HTML</span>
+                <span class="skill-pill">SASS</span>
+                <span class="skill-pill">Javascript</span>
+
               </div>
             </div>
           </div>
@@ -148,20 +156,21 @@
             <span
               >I have had the oppurtunity to work at the following
               companies:</span
-            >
+            >s
           </div>
           <div class="exp-list">
             <ul class="company-list">
-              <li><div>FCI Accelerated Solutions Inc.</div></li>
+              <li class="selected"><div>FCI Accelerated Solutions Inc.</div></li>
               <li><div>Government of Saskatchewan</div></li>
             </ul>
           </div>
 
           <div class="exp-desc">
             <div class="exp-title">
-              <span class="job-pos">Job Title</span>
-              <span class="job-dur">Duration</span>
-            </div>
+              <span class="job-pos">Software Developer</span>
+              <div><span class="job-dur to">September 2018</span><span class="job-dur from">Current</span>
+              </div>
+              </div>
             <div class="exp-duties">
               <ul>
                 <li>did something</li>

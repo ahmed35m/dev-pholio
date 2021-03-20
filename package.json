@@ -1,0 +1,19 @@
+{
+  "name": "dev-pholio",
+  "version": "1.0.0",
+  "description": "Custom developer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmed35m/dev-pholio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmed35m/dev-pholio/issues"
+  },
+  "homepage": "https://github.com/ahmed35m/dev-pholio#readme"
+}
