@@ -1,34 +1,17 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import NavItems from './NavItems/navItems'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <header class="header-bar header-pinned" >
+      <div class="bar">
+      <div class="logo-bar"><a href="" class="no-link">
+        <div class="logo-title">MA</div> </a>
+      </div>
+      <NavItems />
+      </div>
+      </header>
 )
 
 Header.propTypes = {
@@ -39,4 +22,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;
