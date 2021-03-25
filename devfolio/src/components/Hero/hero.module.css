@@ -1,0 +1,74 @@
+
+  .hero {
+    display: grid;
+    grid-template-columns: 7% 55% auto 7%;
+    grid-template-rows: 10% 1fr 10%;
+    min-height: 90vh;
+  }
+  .heroHeads{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    align-self: center;
+  }
+  .heroheading {
+    padding: 0;
+    margin-bottom: 0px;
+    margin-bottom: 10px;
+  }
+  .herosubheading {
+    margin-bottom: 10px;
+
+  }
+  .prehero{
+    /* grid-column: 2 / span 1;
+    grid-row: 2 / span 1; */
+    color: teal;
+    margin-bottom: 10px;
+
+
+  }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .heroheading {
+        font-size: 35px;
+      }
+      .herosubheading {
+        font-size: 17px;
+      }
+      .prehero{
+        font-size: 17px; 
+      }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width : 992px){
+
+    .heroheading {
+        font-size: 5vw;
+      }
+      .herosubheading {
+        font-size: 2.5vw;
+      }
+      .prehero{
+        font-size: 2.5vw; 
+      }
+}
+/* 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .heroheading {
+        font-size: 4vw;
+      }
+      .herosubheading {
+        font-size: 2vw;
+      }
+      .prehero{
+        font-size: 1.5vw; 
+      }
+} 

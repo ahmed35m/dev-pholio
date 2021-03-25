@@ -1,0 +1,14 @@
+
+  .socialbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .horz_list {
+    display: flex;
+    list-style-type: none;
+  }
+  .sociallist {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+  }
