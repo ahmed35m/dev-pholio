@@ -1,0 +1,20 @@
+.contentheading {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin-bottom: 1em;
+  
+    color: teal;
+  }
+  .contentbody {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .contentcontainer {
+    display: grid;
+    grid-template-columns: 7% auto 7%;
+    grid-template-rows: 1fr auto;
+  
+    margin-top: 3em;
+  }
+  
+  

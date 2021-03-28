@@ -1,0 +1,30 @@
+.contentheading {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin-bottom: 1em;
+
+  color: teal;
+}
+.contentbody {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+.cardlist {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  min-height: 600px;
+  justify-items: center;
+  /* display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap; */
+}
+.contentcontainer {
+  display: grid;
+  grid-template-columns: 7% auto 7%;
+  grid-template-rows: 1fr auto;
+
+  margin-top: 3em;
+}
+
