@@ -2,9 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Muhammad's portfolio`,
     description: `Hi, meet Muhammad Manzoor Ahmed.`,
-    author: `@gatsbyjs`,
+    author: `@ahmed35m`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

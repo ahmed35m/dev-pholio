@@ -10,7 +10,7 @@ const About = props => {
     <section className={styles.contentcontainer}>
       <div className={styles.contentheading}>ABOUT ME</div>
       <div className={styles.contentbody} data-label="About">
-        <div class="featured">
+        <div className={styles.featured}>
           <Educ/>
           <Skills />
           </div>

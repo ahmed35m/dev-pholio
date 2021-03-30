@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
 body {
     background-color: rgb(73, 72, 72);
     color: blanchedalmond !important;
@@ -17,12 +30,6 @@ body {
     height: 24px;
   }
 
-
-  
-  li {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
   .main-title {
     display: grid;
     grid-column: 1 / span 2;
@@ -63,10 +70,14 @@ body {
     display: flex;
     list-style-type: none;
   }
+  
+  .li{ 
+    margin-bottom: 0px !important;
+  }
 
   
-  .footer {
-    display: flex;
+  footer {
+    display: flex !important;
     align-items: center;
     justify-content: center;
   }

@@ -1,15 +1,17 @@
 import React from 'react'
 import * as styles from "./skills.module.css"
 
-
+function updateJobDesc(){
+  return null;
+}
 const Skills = ()=>{
     return (
         <div class="feature-skillbox">
         <div className={styles.skilllist}>
           <div className={styles.skillcat}>
-            <ul class="horz-list">
+            <ul className="horz-list">
               <li className={styles.skillcatitem}>
-                <button className={styles.skillcatbtn} onclick="">
+                <button className={styles.skillcatbtn} onClick={updateJobDesc()}>
                   All
                 </button>
               </li>
