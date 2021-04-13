@@ -2,7 +2,7 @@ import React from "react"
 
 const Educ = () => {
   return (
-    <div class="feature-textbox" data-label="intro">
+    <div className="feature-textbox" data-label="intro">
       <span>
         Welcome to my portfolio! I am software engineer, graduated from U of R
       </span>

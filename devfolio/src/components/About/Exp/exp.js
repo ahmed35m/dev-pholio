@@ -4,7 +4,7 @@ import * as styles from "./exp.module.css"
 const Exp = props => {
   return (
     <div className={styles.featured}>
-      <div class="feature-textbox">
+      <div className="feature-textbox">
         <span>
           I have had the oppurtunity to work at the following companies:
         </span>

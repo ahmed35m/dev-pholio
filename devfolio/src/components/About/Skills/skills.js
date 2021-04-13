@@ -6,7 +6,7 @@ function updateJobDesc(){
 }
 const Skills = ()=>{
     return (
-        <div class="feature-skillbox">
+        <div className="feature-skillbox">
         <div className={styles.skilllist}>
           <div className={styles.skillcat}>
             <ul className="horz-list">
