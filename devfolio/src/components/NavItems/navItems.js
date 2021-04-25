@@ -17,8 +17,9 @@ const items = [
 const NavItems = props => {
   return (
     <ul className={`${navStyles.sociallist}`}>
-      <NavItem data={items[0]}></NavItem>
-      <NavItem data={items[1]}></NavItem>
+      {props.data.data.edges.map(el => {
+        return <NavItem key={el.node.id} data={el.node} />
+      })}
     </ul>
   )
 }

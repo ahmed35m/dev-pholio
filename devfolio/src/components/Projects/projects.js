@@ -9,8 +9,12 @@ const Projects = props => {
 
       <div className={styles.contentbody} data-label="Projects">
         <div className={styles.cardlist}>
-            <Card></Card>
-            <p class="text-white-900 leading-tight">Hellow Tailwind</p>
+          {
+            props.data.edges.map( (el)=>{
+              return <Card key={el.node.id} data={el.node}></Card>
+            })
+          }            
+            {/* <p class="text-white-900 leading-tight">Hellow Tailwind</p> */}
         </div>
       </div>
 

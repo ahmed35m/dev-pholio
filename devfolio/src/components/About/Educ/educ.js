@@ -1,6 +1,6 @@
 import React from "react"
 
-const Educ = () => {
+const Educ = (props) => {
   return (
     <div className="feature-textbox" data-label="intro">
       <span>

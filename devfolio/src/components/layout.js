@@ -9,38 +9,26 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./NavItems/header"
-import Hero from "./Hero/hero"
-import Projects from "./Projects/projects"
-import About from "./About/about"
 
+import get from 'lodash/get'
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+      // site {
+      //   siteMetadata { 
+      //     title
+      //   }
+      // }
+  //   }
+  // `)
+  
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main>
-        <Hero />
-        <Projects />
-        <About />
-      </main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
-    </>
+    <div>
+    {children} 
+    </div>
   )
 }
 
