@@ -65,6 +65,14 @@ const RootIndex = ()=>{
       }
     }
   }
+  allContentfulSkills {
+    edges {
+      node {
+        name
+        type
+      }
+    }
+  }
   site {
     siteMetadata {
       title
@@ -74,7 +82,8 @@ const RootIndex = ()=>{
 `);
 
 const about={ info: data.allContentfulPerson,
-            work: data.allContentfulWork}; 
+            work: data.allContentfulWork,
+          skills:data.allContentfulSkills}; 
 
 return (
       <Layout>

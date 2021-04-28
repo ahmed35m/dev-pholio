@@ -1,6 +1,9 @@
 import React from "react"
 import * as styles from "./exp.module.css"
 
+function updateDescription(){
+
+}
 const Exp = props => {
   return (
     <div className={styles.featured}>
@@ -12,12 +15,13 @@ const Exp = props => {
       <div className={styles.exp}>
         <div className={styles.explist}>
           <ul className={styles.companylist}>
-            <li className={styles.selected}>
-              <div>FCI Accelerated Solutions Inc.</div>
-            </li>
-            <li>
-              <div>Government of Saskatchewan</div>
-            </li>
+            {props.data.nodes.map((el,index) => {
+              return (
+                <li key={index} className={styles.selected} onClick={updateDescription()}>
+                  <div>{el.employer}</div>
+                </li>
+              )
+            })}
           </ul>
         </div>
 

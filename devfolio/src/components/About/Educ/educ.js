@@ -1,14 +1,13 @@
 import React from "react"
 
 const Educ = (props) => {
+  console.log(props)
   return (
     <div className="feature-textbox" data-label="intro">
       <span>
-        Welcome to my portfolio! I am software engineer, graduated from U of R
+        {props.data.edges[0].node.shortBio.shortBio}
       </span>
-      <div data-label="skills">
-        <span>Here are some of the technologies I have worked with:</span>
-      </div>
+      
     </div>
   )
 }
