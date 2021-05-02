@@ -54,6 +54,7 @@ const RootIndex = ()=>{
       endDate
       startDate
       title
+      jobDescription
     }
   }
   allContentfulSocials {

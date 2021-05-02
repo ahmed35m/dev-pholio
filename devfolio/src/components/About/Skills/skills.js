@@ -5,7 +5,6 @@ function updateSkillList() {
   return null
 }
 const Skills = props => {
-  console.log(props)
   return (
     <div className="feature-skillbox">
       <div data-label="skills">

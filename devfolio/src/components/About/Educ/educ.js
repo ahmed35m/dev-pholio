@@ -1,7 +1,6 @@
 import React from "react"
 
 const Educ = (props) => {
-  console.log(props)
   return (
     <div className="feature-textbox" data-label="intro">
       <span>
