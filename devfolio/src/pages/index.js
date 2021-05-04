@@ -71,6 +71,7 @@ const RootIndex = ()=>{
       node {
         name
         type
+        category
       }
     }
   }
