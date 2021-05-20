@@ -1,12 +1,38 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import * as styles from "./exp.module.css"
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import ExpInfo from "./expInfo"
 
+// function formatDate(dt) {
+//   let m = [
+//     "Jan",
+//     "Feb",
+//     "Mar",
+//     "Apr",
+//     "May",
+//     "Jun",
+//     "Jul",
+//     "Aug",
+//     "Sept",
+//     "Oct",
+//     "Nov",
+//     "Dec",
+//   ]
+//   let d = new Date(dt)
+// }
+
+function getJob(jobs, e) {
+  return jobs.data.nodes.filter(n => n.employer == e.target.innerHTML).pop()
+}
 const Exp = props => {
-
+  const emplyHist = props
   const [job, setJob] = useState(
     props.data.nodes.filter(n => n.endDate == null).pop()
   )
+
+  // useEffect(() => {
+  //   console.log('Use effect called')
+  //   setJob()
+  // }, [job])
 
   return (
     <div className={styles.featured}>
@@ -20,42 +46,22 @@ const Exp = props => {
           <ul className={styles.companylist}>
             {props.data.nodes.map((el, index) => {
               return (
-                <li
-                  key={index}
-                  className={styles.selected}
-                  onClick={e => {
-                    setJob( props.data.nodes.filter(n => n.employer == e.target.innerHTML).pop())
-                  }}
-                >
-                  <div>{el.employer}</div>
+                <li key={index} className={styles.selected}>
+                  <button
+                    onClick={e => {
+                      setJob(prevState => {
+                        return getJob(emplyHist, e)
+                      })
+                    }}
+                  >
+                    <div>{el.employer}</div>
+                  </button>
                 </li>
               )
             })}
           </ul>
         </div>
-
-        <div className={styles.expdesc}>
-          <div className={styles.exptitle}>
-            <span className={styles.jobpos}>{job.title}</span>
-            <div>
-              <span className={`${styles.jobdur} ${styles.to}`}>
-                {job.startDate}
-              </span>
-              <span className={`${styles.jobdur} ${styles.from}`}>
-                {job.endDate == null || job.endDate == ""
-                  ? "Current Date"
-                  : job.endDate}
-              </span>
-            </div>
-          </div>
-          <div className={styles.expduties}>
-            <ul>
-              {job.jobDescription.map((el, index) => {
-                return <li key={index}>{el}</li>
-              })}
-            </ul>
-          </div>
-        </div>
+        <ExpInfo data={job} />
       </div>
     </div>
   )

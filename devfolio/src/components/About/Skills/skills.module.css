@@ -1,46 +1,53 @@
-
-  .skills{
-    margin: 1em;
-    display: flex;
-    flex-direction: column;
-    border: white 1px solid;
-    align-items: center;
-  
-  }
-  .skilllist{
-      display: flex;
-      flex-direction: column;
-      justify-items: flex-end;
-  }
-  .skillcat >ul{
-   margin: 0px;
-   justify-content: flex-end;
+.skills {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  border: white 1px solid;
+  align-items: center;
 }
-  .pills{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .skillcat{
-    margin: 1em;
-    padding: 1em;
-  }
-  .skillcatbtn{
-    text-decoration: underline;
-  ;
-  }
-  .skillcatitem{
-    margin: 10px;
-  }
-  .skillpill {
-    background-color: blanchedalmond;
-    color: black;
-    border-radius: 90px;
-    padding: 0.4em;
-    margin: 0.2em;
-  }
-  .pill>span{
-    color: black;
-  }
+.skilllist {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+}
+.skillcat > ul {
+  margin: 0px;
+  justify-content: flex-end;
+}
+.pills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillcat {
+  margin: 1em;
+  padding: 1em;
+}
+.skillcatbtn {
+  text-decoration: underline;
+}
+.skillcatitem {
+  margin: 10px;
+}
+.skillpill {
+  background-color: rgb(36, 36, 36);
+  border-radius: 90px;
+  padding: 5px 10px;
+  margin: 0.2em;
+  max-width: 110px;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: smaller;
+  color: rgb(165, 164, 164);
+}
+.skillpill:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pill > span {
+  color: black;
+  overflow: hidden;
+}

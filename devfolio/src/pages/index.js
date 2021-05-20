@@ -34,9 +34,11 @@ const RootIndex = ()=>{
   allContentfulProject {
     edges {
       node {
-        description
-        name
         id
+        description
+        techStack
+        name
+        gitHubLink
       }
     }
   }

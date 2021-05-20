@@ -1,21 +1,31 @@
 import React from "react"
-import gitpic from '../../../images/GitHub.png'
-import emailpic from '../../../images/GitHub.png' 
+import gitpic from "../../../images/logo-github.svg"
+import emailpic from "../../../images/mail-outline.svg"
+import linkedpic from "../../../images/logo-linkedin.svg"
+import * as styles from "./NavItem.module.css"
+
 const images = {
-  gitpic, emailpic
-};
-const NavItem = props  => {
-
+  gitpic,
+  emailpic,
+  linkedpic,
+}
+const NavItem = props => {
+  let img
+  switch (props.data.name.toLowerCase()) {
+    case "github":
+      img = gitpic
+      break
+    case "linkedin":
+      img = linkedpic
+      break
+    case "email":
+      img = emailpic
+      break
+  }
   return (
-    <li style={ {margin:"0px 10px 0px 10px" } } >
-      <a href={props.data.link} >
-        <img
-          src= {gitpic}
-          // {images[props.src]}
-          alt={props.data.name}
-        /> 
-        {/* <img src={require(`${image}`)} alt="product" /> */}
-
+    <li className={styles.navItem}>
+      <a href={props.data.link}>
+        <img src={img} alt={props.data.name} />
       </a>
     </li>
   )
