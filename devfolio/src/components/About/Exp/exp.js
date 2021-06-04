@@ -28,6 +28,7 @@ const Exp = props => {
   const [job, setJob] = useState(
     props.data.nodes.filter(n => n.endDate == null).pop()
   )
+  const [activeJob, setActiveJob] = useState(job.employer)
 
   // useEffect(() => {
   //   console.log('Use effect called')
@@ -43,23 +44,24 @@ const Exp = props => {
       </div>
       <div className={styles.exp}>
         <div className={styles.explist}>
-          <ul className={styles.companylist}>
+          <div className={styles.companylist}>
             {props.data.nodes.map((el, index) => {
               return (
-                <li key={index} className={styles.selected}>
-                  <button
-                    onClick={e => {
-                      setJob(prevState => {
-                        return getJob(emplyHist, e)
-                      })
-                    }}
-                  >
-                    <div>{el.employer}</div>
-                  </button>
-                </li>
+                <button
+                  className={activeJob == el.employer ? styles.selected : null}
+                  key={index}
+                  onClick={e => {
+                    setJob(prevState => {
+                      return getJob(emplyHist, e)
+                    })
+                    setActiveJob(el.employer)
+                  }}
+                >
+                  {el.employer}
+                </button>
               )
             })}
-          </ul>
+          </div>
         </div>
         <ExpInfo data={job} />
       </div>
