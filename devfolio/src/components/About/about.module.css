@@ -11,7 +11,7 @@
   }
   .contentcontainer {
     display: grid;
-    grid-template-columns: 7% auto 7%;
+    grid-template-columns: 7% 86% 7%;
     grid-template-rows: 1fr auto;
   
     margin-top: 3em;
