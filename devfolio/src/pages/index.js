@@ -91,7 +91,6 @@ const about={ info: data.allContentfulPerson,
 
 return (
       <Layout>
-        <div>
         <Helmet title={data.site.siteMetadata.title} />  
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} data={data.allContentfulSocials} />
         <main>
@@ -102,9 +101,8 @@ return (
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com"> Gatsby</a>
+          <a href="https://www.gatsbyjs.com">{` `} Gatsby</a>
         </footer>
-        </div>
       </Layout>
     );
   }
