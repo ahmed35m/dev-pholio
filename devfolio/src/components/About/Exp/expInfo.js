@@ -1,27 +1,34 @@
 import React from "react"
 import * as styles from "./exp.module.css"
+
+
 const ExpInfo = props => {
+ 
   var job = props.data
-  if(job !=undefined){
+  const formatDate=(dt)=>{
+    let fmt = new Date(dt)
+    fmt =   fmt.toString().split(' ')
+    return fmt[1] + ' '+ fmt[3]
+  }
+    if(job !=undefined){
   return (
-    <div>
       <div className={styles.expdesc}>
-        <div className={styles.exptitle}>
           <div className={styles.exphead}>
+          <div>
           <span className={styles.jobpos}>{job.title}</span>
           <span className={styles.jobemployer}>@{' '} {job.employer}</span>
-          </div>
+          </div>  
           <div>
             <span className={`${styles.jobdur} ${styles.to}`}>
-              {job.startDate}
+              { formatDate (props.data.startDate)}
             </span>
             <span className={`${styles.jobdur} ${styles.from}`}>
-              {job.endDate == null || job.endDate == ""
+              { job.endDate== null || job.endDate == ""
                 ? "Current Date"
-                : job.endDate}
+                : formatDate(job.endDate)}
             </span>
+            </div>
           </div>
-        </div>
         <div className={styles.expduties}>
           <ul>
             {job.jobDescription.map((el, index) => {
@@ -30,7 +37,6 @@ const ExpInfo = props => {
           </ul>
         </div>
       </div>
-    </div>
   )}
   else
             return <div>An Error occurred. Please reload page</div>
