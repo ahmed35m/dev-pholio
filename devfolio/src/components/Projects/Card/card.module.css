@@ -1,4 +1,4 @@
-.c1 {
+/* .c1 {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
@@ -21,7 +21,7 @@
 .c6 {
   grid-column: 3 / span 1;
   grid-row: 2 / span 1;
-}
+} */
 .cardtitle {
   /* grid-column: 1 / span 1;
     grid-row: 2 / span 1; */
@@ -29,13 +29,15 @@
   flex-grow: 2;
   font-size: 16px;
   color: white;
+  overflow: hidden;
 }
 .carddesc {
   /* grid-column: 1 / span 1;
     grid-row: 3 / span 1; */
-  flex-grow: 2;
+  flex-grow: 1;
   font-size: 14px;
   color: rgb(214, 212, 212);
+  overflow: hidden;
 }
 .cardimage {
   /* grid-column: 1 / span 1;
@@ -46,17 +48,23 @@
   max-height: 25px;
   padding: 2px;
 }
-.card {
+.cardwrapper{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-width: 400px;
-  min-height: 170px;
+
   justify-items: center;
 
+}
+.card {
+
+  display: flex;
   background-color: rgb(36, 36, 36);
   border-radius: 5px;
-  margin: 1.5em 1em 1em 1em;
+  /* margin: 1.5em 1em 1em 1em; */
+  flex-grow: 1;
+  min-width: 100%;
+  min-height: 200px;
   padding: 15px;
 }
 .card:hover {
