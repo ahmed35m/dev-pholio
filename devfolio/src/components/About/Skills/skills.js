@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+
 import * as styles from "./skills.module.css"
 
 function filterSkills(type, p) {
@@ -14,32 +15,31 @@ const skillTypes = ["All", "Programming Language", "Framework", "Tooling"]
 
 const Skills = props => {
   const [skill, setSkill] = useState(props.data.edges)
+  const [activeSkill, setActiveSkill] = useState("All")
 
   return (
     <div className="feature-skillbox">
-      <div data-label="skills">
-        <span>Here are some of the technologies I have worked with:</span>
+      <div className={styles.skillintro}>
       </div>
-      <div className={styles.skilllist}>
-        <div className={styles.skillcat}>
-          <ul className="horz-list">
-            {skillTypes.map((el, index) => {
-              return (
-                <li key={index} className={styles.skillcatitem}>
-                  <button
-                    className={styles.skillcatbtn}
-                    href=""
-                    onClick={e => {
-                      setSkill(filterSkills(e.target.innerHTML, props))
-                    }}
-                  >
-                    {el}
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
+      <div className={styles.skillcat}>
+        <ul className="horz-list">
+          {skillTypes.map((el, index) => {
+            return (
+              <li key={index} className={styles.skillcatitem}>
+                <button
+                  className={activeSkill == el ? styles.skillActive : null}
+                  onClick={e => {
+                    setActiveSkill(e.target.innerHTML)
+                    setSkill(filterSkills(e.target.innerHTML, props))
+                  }}
+                >
+                  {el}
+                </button>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
         <div className={styles.pills}>
           {skill.map((el, index) => {
             return (
@@ -50,7 +50,6 @@ const Skills = props => {
           })}
         </div>
       </div>
-    </div>
   )
 }
 

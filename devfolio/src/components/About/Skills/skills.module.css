@@ -2,36 +2,60 @@
   margin: 1em;
   display: flex;
   flex-direction: column;
-  border: white 1px solid;
   align-items: center;
 }
-.skilllist {
+/* .skilllist {
   display: flex;
   flex-direction: column;
-  justify-items: flex-end;
-}
+  align-items: flex-end;
+  max-width: 600px;
+} */
+
 .skillcat > ul {
   margin: 0px;
   justify-content: flex-end;
 }
+.skillintro{
+  grid-column:  1 / span 3;
+  grid-row: 1 /span 1;
+}
 .pills {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  align-content: start;
   flex-wrap: wrap;
+  margin: 10px;
+  min-height: 30vh;
+
+  grid-column:  2/span 1;
+  grid-row: 3 /span 1;
 }
 
 .skillcat {
-  margin: 1em;
-  padding: 1em;
+  margin: 10px;
+  grid-column:  2/span 1;
+  grid-row: 2 /span 1;
+
 }
-.skillcatbtn {
+
+.skillActive {
   text-decoration: underline;
+  color: white;
 }
 .skillcatitem {
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: rgb(165, 164, 164);
 }
+.skillcatitem > button {
+  border: none;
+  outline: none;
+}
+
 .skillpill {
   background-color: rgb(36, 36, 36);
   border-radius: 90px;
@@ -48,6 +72,15 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pill > span {
-  color: black;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .skillcat {
+    grid-column: 1/span 3;
+  }
+  .pills{
+    grid-column: 1/span 3;
+
+  }
 }
