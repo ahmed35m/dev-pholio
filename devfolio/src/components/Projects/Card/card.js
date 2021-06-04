@@ -4,7 +4,8 @@ import emailpic from "../../../images/mail-outline.svg"
 
 const Card = props => {
   return (
-    <a className={` ${styles.card}`} href={props.data.gitHubLink}>
+    <div  className={` ${styles.card}`}>
+      <a href={props.data.gitHubLink} className={` ${styles.cardwrapper}`} >
       <div className={styles.cardheader}>
         <div className={styles.cardtitle}>{props.data.name}</div>
 
@@ -22,7 +23,8 @@ const Card = props => {
           <span></span>
         )}
       </div>
-    </a>
+      </a>
+    </div>
   )
 }
 export default Card
