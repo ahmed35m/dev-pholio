@@ -30,6 +30,7 @@ body {
     height: 24px;
   }
 
+
   .main-title {
     display: grid;
     grid-column: 1 / span 2;
@@ -59,10 +60,22 @@ body {
   .feature-skillbox {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
-    min-height: 250px;
-    margin: auto;
-    border: white 1px solid;
-    max-width: 45vw;
+    display: grid;
+    /* grid-template-columns:  repeat(auto-fit, minmax(100px, 600px)); */
+    grid-template-columns: 14% minmax(100px,500px) 14%;
+    grid-template-rows: auto auto 1fr;
+    /* flex-direction: column;
+    align-items: center; */
+    margin: 2em 1em 4em 1em;
+    justify-content: center;
+  }
+
+  .skillbox{
+    border: 1px solid white;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
   }
 
   .horz-list {
@@ -79,5 +92,26 @@ body {
     display: flex !important;
     align-items: center;
     justify-content: center;
+    margin-top: 100px ;
   }
-  
+ 
+ 
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #464545;
+}
