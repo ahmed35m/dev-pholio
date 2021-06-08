@@ -11,20 +11,18 @@
 }
 .cardlist {
   display: grid;
-  grid-template-columns: repeat(3,  1fr);
-  grid-template-rows: 50% 50%;
-  min-height: 600px;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); 
+  /* grid-template-columns: repeat(3,  1fr); */
+  grid-template-rows: repeat(auto-fill,minmax(240px,1fr));
+  grid-gap: 20px;
+  /* min-height: 600px; */
   justify-items: center;
-  /* display: flex;
-    flex-direction: row;
-    flex-grow: 2;
-    flex-wrap: wrap; */
+
 }
 .contentcontainer {
   display: grid;
   grid-template-columns: 7% auto 7%;
   grid-template-rows: 1fr auto;
-
   margin-top: 3em;
 }
 

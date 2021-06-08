@@ -14,9 +14,9 @@ const ExpInfo = props => {
   return (
       <div className={styles.expdesc}>
           <div className={styles.exphead}>
-          <div>
-          <span className={styles.jobpos}>{job.title}</span>
-          <span className={styles.jobemployer}>@{' '} {job.employer}</span>
+          <div className={styles.head}>
+          <div className={styles.jobpos}>{job.title}</div>
+          <div className={styles.jobemployer}>{job.employer}</div>
           </div>  
           <div>
             <span className={`${styles.jobdur} ${styles.to}`}>
@@ -24,7 +24,7 @@ const ExpInfo = props => {
             </span>
             <span className={`${styles.jobdur} ${styles.from}`}>
               { job.endDate== null || job.endDate == ""
-                ? "Current Date"
+                ? "Current"
                 : formatDate(job.endDate)}
             </span>
             </div>
