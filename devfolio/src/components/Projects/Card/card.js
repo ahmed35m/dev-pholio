@@ -1,6 +1,5 @@
 import React from "react"
 import * as styles from "./card.module.css"
-import emailpic from "../../../images/mail-outline.svg"
 
 const getRandomColor=()=>{
   const randomColor = Math.floor(Math.random()*16777215).toString(16);

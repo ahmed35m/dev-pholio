@@ -22,7 +22,8 @@
 .contentcontainer {
   display: grid;
   grid-template-columns: 7% auto 7%;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr ;
   margin-top: 3em;
+  height: 90vh;
 }
 

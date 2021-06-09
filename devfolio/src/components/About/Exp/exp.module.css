@@ -105,7 +105,7 @@ margin-right: 5px;
 }
 .to::after {
   content: " - ";
-  color: blue;
+  color: rgb(165, 164, 164);;
 }
 .selected {
   color: white !important;
@@ -123,5 +123,11 @@ margin-right: 5px;
   }
   .explist > .companylist>button {
     width: 200px;    
+  }
+
+  .explist {
+    /* grid-column: 1 / span 1;
+    grid-row: 1 / span 1; */
+    flex-basis: auto;
   }
 }
