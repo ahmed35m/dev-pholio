@@ -1,17 +1,12 @@
 import React from "react";
-import { StaticQuery, graphql, useStaticQuery } from "gatsby";
-import get from "lodash/get";
+import {  graphql, useStaticQuery } from "gatsby";
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import Header from "../components/NavItems/header";
 import Hero from "../components/Hero/hero";
 import Projects from "../components/Projects/projects";
- import About from "../components/About/about";
-
-// class RootIndex extends React.Component {
-//   render() {
-//   }
-// }
+import About from "../components/About/about";
+import Fade from 'react-reveal/Fade';
 
 const RootIndex = ()=>{
 
@@ -94,9 +89,11 @@ return (
         <Helmet title={data.site.siteMetadata.title} />  
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} data={data.allContentfulSocials} />
         <main>
+          <Fade bottom>
           <Hero data={data.allContentfulPerson}/>
           <Projects data={data.allContentfulProject}/>
           <About data={about}/>
+          </Fade>
         </main>
         <footer>
           © {new Date().getFullYear()}, Built with
