@@ -34,7 +34,7 @@
 .jobemployer {
   color: rgb(165, 164, 164);
   margin-left: 1em;
-  flex-basis: 50%;
+  flex-basis: 65%;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -59,7 +59,7 @@ margin-right: 5px;
 
 .jobpos {
   color: white;
-  flex-basis: 50%;
+  flex-basis: 35%;
 }
 .jobdur {
   font-size: 1em;

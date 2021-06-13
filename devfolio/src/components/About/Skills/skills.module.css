@@ -51,6 +51,11 @@
   margin-bottom: 2px;
   color: rgb(165, 164, 164);
 }
+.skillcatitem:hover{
+  color: white;
+}
+
+
 .skillcatitem > button {
   border: none;
   outline: none;

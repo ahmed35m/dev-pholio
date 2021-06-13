@@ -11,10 +11,15 @@
   }
   .contentcontainer {
     display: grid;
-    grid-template-columns: 7% 86% 7%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr auto;
   
     margin-top: 3em;
   }
   
   
+@media only screen and (max-width: 600px) {
+ .contentcontainer{
+  grid-template-columns: 7% 86% 7%;
+ }
+}
