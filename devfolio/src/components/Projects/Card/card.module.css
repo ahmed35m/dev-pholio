@@ -81,8 +81,9 @@
 .cardfooterItem {
   margin-left: 3px;
   padding: 3px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 .cardfooterItem:hover {
-  background-color: rgb(59, 59, 59);;
+  color: white;
+  /* background-color: rgb(59, 59, 59);; */
 }

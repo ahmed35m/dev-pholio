@@ -1,0 +1,25 @@
+.contactsection {
+  display: grid;
+  grid-template-columns: 7% auto 7%;
+  grid-template-rows: 0.7fr auto auto 1fr;
+  place-items: center;
+  height: 80vh;
+  margin: 50px 0px;
+}
+.contacttitle {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  font-size: 1.2em;
+  margin: 15px;
+}
+.contactbutton {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  color: white;
+  background-color: black;
+  border-radius: 45px;
+  margin: 15px;
+  padding: 10px 25px ;
+  border-color: white;
+  font-size: 1em;
+}

@@ -6,6 +6,7 @@ import Header from "../components/NavItems/header";
 import Hero from "../components/Hero/hero";
 import Projects from "../components/Projects/projects";
 import About from "../components/About/about";
+import Contact from "../components/Contact/contact";
 import Fade from 'react-reveal/Fade';
 
 const RootIndex = ()=>{
@@ -93,12 +94,10 @@ return (
           <Hero data={data.allContentfulPerson}/>
           <Projects data={data.allContentfulProject}/>
           <About data={about}/>
+          <Contact />
           </Fade>
         </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">{` `} Gatsby</a>
+        <footer>Made by <span>{' '}Muhammad Ahmed{' '}</span> with Gatsby
         </footer>
       </Layout>
     );
