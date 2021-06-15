@@ -1,6 +1,6 @@
 import React from "react"
 import gitpic from "../../../images/logo-github.svg"
-import emailpic from "../../../images/mail-outline.svg"
+import emailpic from "../../../images/mail.svg"
 import linkedpic from "../../../images/logo-linkedin.svg"
 import * as styles from "./NavItem.module.css"
 
