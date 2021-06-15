@@ -45,7 +45,7 @@ const Exp = props => {
       <div className={styles.exp}>
         <div className={styles.explist}>
           <div className={styles.companylist}>
-            {props.data.nodes.map((el, index) => {
+            {props.data.nodes.sort( (a,b)=>{ return new Date(b.startDate) - new Date( a.startDate) }).map((el, index) => {
               return (
                 <button
                   className={activeJob == el.employer ? styles.selected : null}
