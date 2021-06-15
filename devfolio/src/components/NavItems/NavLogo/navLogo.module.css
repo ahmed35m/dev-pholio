@@ -4,5 +4,8 @@
   .logobox{
     padding: 0.3em;
     border: teal 2px solid;
-
+    border-radius: 30px;
+  }
+  .logobox:hover{
+    box-shadow: 0 4px 8px 0 rgb(237 228 228 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   }

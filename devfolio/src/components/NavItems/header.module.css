@@ -1,9 +1,9 @@
 .headerpinned{
-    background-color: rgb(49, 47, 47);
+    /* background-color: rgb(49, 47, 47); */
   }
   header{
     z-index: 1;
-    background-color: rgb(68, 68, 68)  !important;
+    background-color:#001220;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: sticky;
     transition: top 0.3s;
@@ -16,7 +16,6 @@
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
     color: whitesmoke;
   }
   .bar{
