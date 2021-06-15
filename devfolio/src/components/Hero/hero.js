@@ -1,6 +1,5 @@
 import React from "react"
 import * as styles from "./hero.module.css"
-import get from "lodash/get"
 
 const hero = props => {
   var name = props.data.edges[0].node.name.split(' ');
@@ -12,6 +11,8 @@ const hero = props => {
         <div className={styles.prehero}>Hey, I am </div>
         <h1 className={styles.heroheading}>{name}</h1>
         <h5 className={styles.herosubheading}>{position}</h5>
+        <div className={styles.prehero}>I create solutions for web </div>
+
       </div>
     </div>
   )
