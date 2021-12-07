@@ -115,7 +115,7 @@ const RootIndex = () => {
         </Fade>
       </main>
       <footer>
-        Made by <span>Muhammad Ahmed</span> with Gatsby. Licensed under MIT.
+        Made by Muhammad Ahmed with Gatsby. Licensed under MIT.
       </footer>
     </Layout>
   )
