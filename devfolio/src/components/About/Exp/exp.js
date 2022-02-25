@@ -48,6 +48,7 @@ const Exp = props => {
             {props.data.nodes.sort( (a,b)=>{ return new Date(b.startDate) - new Date( a.startDate) }).map((el, index) => {
               return (
                 <button
+                  style={{ 'height': '70px'}}
                   className={activeJob == el.employer ? styles.selected : null}
                   key={index}
                   onClick={e => {

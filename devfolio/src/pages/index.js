@@ -22,6 +22,9 @@ const RootIndex = () => {
             shortBio {
               shortBio
             }
+            bioRtf {
+              raw
+            }
             title
             email
             github

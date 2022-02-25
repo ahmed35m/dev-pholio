@@ -121,8 +121,8 @@ margin-right: 5px;
     flex-direction: row;
 
   }
-  .explist > .companylist>button {
-    width: 200px;    
+  .explist > .companylist >button {
+    width: 200px;
   }
 
   .explist {
